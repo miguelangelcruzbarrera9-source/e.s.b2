@@ -1,0 +1,67 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+
+}
+
+header{
+    
+    width: 100%;
+    height: 50px;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "uno dos tres"
+    "cuatro dos tres"
+    ;
+    gap: 3px;
+
+}
+
+
+main{
+    background: white;
+    flex: 1;
+    display: grid;
+    gap: 2px;
+    margin:5px;
+    grid-area: main ;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "tres uno"
+    "tres dos"
+    "tres cuatro"
+    ;
+}
+
+
+footer{
+    grid-area: footer;
+    background: red;
+    width: 100%;
+    height: 50px;
+}
+.uno{
+    background-color: brown;
+    grid-area: uno;
+}
+.dos{
+    background-color: blueviolet;
+    grid-area: dos;
+}
+.tres{
+    background-color: aqua;
+    grid-area: tres;
+}
+.cuatro{
+    background-color: aquamarine;
+    grid-area: cuatro;
